@@ -1,0 +1,124 @@
+/* Media query para 1280px */
+
+/* Media query para 1024px */
+@media (max-width: 1024px) {
+  main {
+    display: flex;
+    flex-direction: column; /* Establecer la dirección de flexión como columna */
+  }
+
+  /* Estilos para la sección */
+  section {
+    order: 1; /* Establecer el orden a 1 para que aparezca arriba */
+  }
+
+  /* Estilos para el artículo */
+  article {
+    order: 2; /* Establecer el orden a 2 para que aparezca abajo */
+  }
+  .articulo-mid-button{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  h1 br {
+    display: none; /* Ocultar los elementos <br> dentro de un <p> */
+  }
+
+}
+/* Oculta el sidebar y el toggle-btn para pantallas con ancho mayor a 640px */
+@media (min-width: 641px) {
+  #sidebar {
+    display: none; /* Oculta el sidebar */
+  }
+  
+  .toggle-btn {
+    display: none; /* Oculta el toggle-btn */
+  }
+  .articulo-mid-button {
+    width: 60%;
+  }
+  .articulo-mid-button button{
+    width: 80%;
+    margin-right: 2%;
+  }
+}
+/* Media query para 640px */
+@media (max-width: 640px) {
+   .list-item, .head-img{
+   display: none;
+  }
+  .head-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+  }
+  
+  .articulo-mid-button{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #sidebar{
+    position: fixed;
+    top: 0;
+    right: -419px; /* Para ocultar el sidebar por defecto */
+    height: 82%;
+    width: 419px;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    
+  }
+  #sidebar.active{
+    right: 0;
+  }
+  #sidebar ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 55px;
+  }
+ 
+  #sidebar ul li{
+    padding: 35px 0px;
+    text-align: center;
+    list-style: none;
+    font-size: 2.5rem;
+    font-weight: 600;
+    width: 100%;
+  }
+  /* Estilos para la imagen head-img dentro del sidebar */
+#sidebar .head-img1 {
+  margin: 15px auto;
+}
+  
+  .toggle-btn{
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .toggle-btn span{
+    display:block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+ 
+  }
+  #sidebar .close-btn{
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    cursor: pointer;
+    font-size: 36px;
+    color: red;
+  }
+  .head-img1 {
+    margin-right: 50px;
+    border-radius: 30px;
+    background-color: #111729;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

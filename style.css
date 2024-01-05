@@ -1,0 +1,153 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  /* Dividiendo el espacio en dos columnas iguales */
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color:#F2F9FE ;
+}
+* {
+  user-select: none;
+}
+
+/* ESTILOS PARA EL HEAD */
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.head-container {
+  margin-left: 50px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.list-item {
+  padding: 1rem;
+  list-style: none;
+}
+/* ESTILOS PARA EL BOTON DEL THEME */
+.head-img {
+  display: flex;
+  cursor: pointer;
+  margin-right: 50px;
+  border-radius: 200px;
+  width: 70px;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 0.3s ease;
+  background-color: #111729;
+} 
+/* Estilos para cuando el botón está activo */
+.head-img.active .head-img-container {
+ 
+  border-radius: 50%; /* Forma circular */
+  display: flex;
+  margin: 3px;
+}
+
+  /* Estilos para la imagen del sol y la luna */
+  .head-img img {
+    max-width: 100%;
+    height: auto;
+  }
+  /* Estilos para cuando el botón está activo (añadir o modificar según sea necesario) */
+.head-img.active {
+  background-color: #F2F9FE; /* Cambiar el color de fondo cuando está activo */
+}
+/* Ajustando aún más la imagen dentro del contenedor*/
+.head-img-container img {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  margin: 3px;
+  background-color: #FFFFFF;
+  border-radius: 50%; /*Imagen sea también circular */
+}
+
+
+/* ESTILOS PARA EL ARTICLE */
+.articulo {
+  margin-left: 50px;
+}
+
+.articulo-top p {
+  font-size: 14px;
+}
+
+
+.articulo-mid p {
+  font-size: 18px;
+  color: #223344;
+}
+
+.articulo-top h1 {
+  font-size: 60px;
+}
+
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-img img{
+  width: 600px;
+  height: 500px;
+}
+/* ESTILOS PARA ARTICULO-BUTTON */
+.articulo-mid-button{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.articulo-mid-button button{
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #2A4DD0;
+  color: #FFFFFF;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  align-items: center;
+  width: 75%;
+}
+.articulo-mid-button a{
+  color: #2A4DD0;
+  font-weight: bold;
+}
+/* Estilos para ARTICULO BOTTOM */
+
+.articulo-bottom-list {
+  list-style-type: none; /* Eliminar viñetas predeterminadas */
+  padding: 0; /* Eliminar relleno */
+  display: flex; 
+ 
+}
+
+.articulo-bottom-list-item {
+  padding-left: 40px; /* Espacio para la imagen (viñeta) */
+  position: relative; /* Posición relativa para el pseudo-elemento */
+  display: flex; /* Usar flexbox para alinear elementos verticalmente */
+  align-items: center; /* Centrar verticalmente los elementos */
+  margin-right: 20px; /* Espacio entre los elementos li */
+}
+
+/* Establecer la imagen como estilo de viñeta */
+.articulo-bottom-list-item::before {
+  content: ""; /* Contenido obligatorio para pseudo-elemento */
+  background-image: url("assets/Done_ring_round_fill.svg"); /* 
+  background-size: contain; /* Tamaño de imagen */
+  background-repeat: no-repeat; /* No repetir imagen */
+  width: 30px; 
+  height: 30px; 
+  position: absolute; 
+  left: 0; 
+  top: 50%; 
+  transform: translateY(-50%); 
+}

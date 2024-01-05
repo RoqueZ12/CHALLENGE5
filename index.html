@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="query.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="head">
+      <div class="head-container">
+        <img src="assets/alarado-icon-homepage.svg" />
+        <div class="toggle-btn">
+          <span>&#9776;</span>
+        </div>
+      </div>
+      <div id="sidebar">
+        <ul>
+          <li><strong>About us</strong></li>
+          <li>Product</li>
+          <li>Resource</li>
+          <li>Contact</li>
+          <div class="head-img1">
+            <img id="moonIconBar" src="assets/Moon_fill_light.svg" />
+            <div class="head-img-container">
+              <img id="sunIconBar" src="assets/Sun_fill.svg" />
+            </div>
+          </div>
+        </ul>
+        <div class="close-btn">X</div>
+      </div>
+      <nav id="nav">
+        <ul class="list">
+          <li class="list-item"><strong>About us</strong></li>
+          <li class="list-item">Product</li>
+          <li class="list-item">Resource</li>
+          <li class="list-item">Contact</li>
+        </ul>
+      </nav>
+      <div class="head-img" onclick="toggleMode()">
+        <img id="moonIcon" src="assets/Moon_fill_light.svg" />
+        <div class="head-img-container">
+          <img id="sunIcon" src="assets/Sun_fill.svg" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <article class="articulo">
+        <div class="articulo-top">
+          <p><strong>😎 Simple way to communicate</strong></p>
+          <h1>
+            Actions for <br />
+            Accessibility <br />in Design
+          </h1>
+        </div>
+        <div class="articulo-mid">
+          <p>
+            The fastest way to build and deploy websites with<br />
+            resusable components.
+          </p>
+          <div class="articulo-mid-button">
+            <button>GET STARTED</button>
+            <a href="">Get live demo</a>
+          </div>
+        </div>
+        <div class="articulo-bottom">
+          <ul class="articulo-bottom-list">
+            <li class="articulo-bottom-list-item">No credit card required</li>
+            <li class="articulo-bottom-list-item">No software to install</li>
+          </ul>
+        </div>
+      </article>
+      <section class="hero">
+        <div class="hero-img">
+          <img src="assets/hero-image-simple-homepage.png" />
+        </div>
+      </section>
+    </main>
+    <script src="theme.js"></script>
+    <script src="sidebar.js"></script>
+    <!-- Enlazar el archivo JavaScript externo -->
+  </body>
+</html>
